@@ -1,0 +1,32 @@
+{
+  "name": "lightbase",
+  "version": "1.0.0",
+  "description": "Real Time DB",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "author": "Rio Weber",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "connect-mongo": "^2.0.0",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.14.0",
+    "express-partial-response": "^0.3.4",
+    "express-session": "^1.14.0",
+    "file-system": "^2.2.1",
+    "method-override": "^2.3.6",
+    "moment": "^2.19.1",
+    "mongodb": "^2.1.18",
+    "mongoose": "^4.12.4",
+    "rand-token": "^0.2.1",
+    "socket.io": "^2.0.3",
+    "uuid": "^3.1.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.9.2"
+  }
+}

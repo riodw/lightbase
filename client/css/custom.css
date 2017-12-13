@@ -1,0 +1,79 @@
+/* custom.css */
+
+html,
+body {
+    background-color: #FFF;
+    font-family: "Nunito Sans", san-serif;
+}
+
+body {
+    height: 100%;
+    min-height: 75rem;
+    padding-top: 4.5rem;
+}
+
+i {
+    vertical-align: middle;
+    display: inline;
+}
+
+.nav li,
+.pagination,
+a {
+    cursor: pointer;
+}
+
+
+@media print {
+    #navbar-collapse-1 {
+        display: none;
+    }
+    #left__nav-bar {
+        display: none;
+    }
+
+}
+
+*:focus {
+    outline: 0 !important;
+}
+
+
+/*  */
+
+.clear-both {
+    clear: both;
+}
+
+.max_width_1200 {
+    max-width: 1200px !important;
+    margin: 0 auto;
+}
+
+
+
+/* TEXT ALIGN */
+
+.text-left {
+    text-align: left !important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+@media screen and (max-width: 767px) {
+    .wrapper>div {
+        padding-right: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .drill.ng-hide {
+        position: absolute;
+        opacity: 0.8;
+        z-index: 1000;
+    }
+}
+/* END - custom.css */

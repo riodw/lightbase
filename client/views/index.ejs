@@ -1,0 +1,125 @@
+<!-- ENV: <%= ENV %> -->
+<!-- app branch:   <%= server_commit_branch %> -->
+<!-- app version:  <%= server_commit_sha %> -->
+<!-- start time:   <%= server_start_time %> -->
+<!-- server time:  <%= server_current_time %> -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="Rio Weber">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <% if (ENV == 'production') { %>
+    <title>Lightbase</title>
+    <% } else { %>
+    <title><%= ENV %> Lightbase</title>
+    <% } %>
+
+    <link rel="icon" type="image/png" href="/img/favicon.png">
+
+    <!-- Bootstrap Core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="/css/custom.css">
+
+    <!-- Font -->
+    <!-- https://fonts.google.com/?selection.family=Nunito+Sans:400,400i,600 -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Nunito+Sans:400,400i,600">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    
+
+    <% if (ENV == 'production') { %>
+    <!-- Global Site Tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <script>
+
+    </script>
+
+    <!-- Facebook Pixel Code -->
+    <script>
+
+    </script>
+
+    <noscript>
+        <img height="1" width="1" src="" />
+    </noscript>
+    <!-- End Facebook Pixel Code -->
+    
+    <% } else if (ENV == 'development') { %>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js"></script>
+    <script>
+
+    </script>
+
+    <!-- NO Facebook Pixel Code -->
+    
+    <% } else { %>
+    <!-- NO Google Analytics -->
+    
+    <!-- NO Facebook Pixel Code -->
+    <% } %>
+            
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+        <a class="navbar-brand" href="#">Node Express Base</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline mt-2 mt-md-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <main role="main" class="container">
+        <div class="jumbotron">
+            <h1>Node Express Base Project</h1>
+            <p class="lead">This is a base project for a Node Express Server.</p>
+            <p>By:</p>
+            <a class="btn btn-lg btn-primary" href="http://www.rioweber.com" role="button">Rio Weber &raquo;</a>
+        </div>
+
+        <div class="row">
+            <div class="col-lg-6">
+                <h4>More on Node</h4>
+                <a href="https://medium.com/riow/set-up-a-new-node-js-production-server-on-ubuntu-8c57ae14a0bf">Set up a new Node.js Production Server on Ubuntu</a>
+            </div>
+        </div>
+    </main>
+
+</body>
+
+</html>
