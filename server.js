@@ -46,8 +46,6 @@ const {
  * https://expressjs.com */
 const express = require('express');
 
-
-
 /** cookie-parser
  * Parse Cookie header and populate req.cookies with an object keyed by the cookie names. Optionally you may enable signed cookie support by passing a secret string, which assigns req.secret so it may be used by other middleware.
  * https://github.com/expressjs/cookie-parser */
@@ -88,6 +86,11 @@ const moment = require('moment');
  * https://www.npmjs.com/package/socket.io */
 const socketio = require('socket.io');
 
+/** jsonfile
+ * Writing JSON.stringify() and then fs.writeFile() and JSON.parse() with fs.readFile() enclosed in try/catch blocks became annoying.
+ * https://www.npmjs.com/package/jsonfile */
+const jf = require('jsonfile');
+
 /** uuid
  * Simple, fast generation of RFC4122 UUIDS. (Universally Unique Identifier)
  * https://github.com/kelektiv/node-uuid */
@@ -96,7 +99,7 @@ const uuidv1 = require('uuid/v1');
 /** ejs
  * EJS is a simple templating language that lets you generate HTML markup with plain JavaScript.
  * http://ejs.co/#docs */
- const ejs = require('ejs');
+const ejs = require('ejs');
 
 
 
@@ -229,12 +232,17 @@ mongoose.connect(configDB.url);
  *************************************************************/
 var app = express();
 
+/*************************************************************
+ * DEFINE SERVER
+ *************************************************************/
+var server = http.createServer(app);
+
+// -----------------------------jkl;skladfsjkl;adfsljkl;dfsdfjklsjklfsjkl;adfsjkljkl
+var io = socketio.listen(server);
 
 /*************************************************************
  * USE MIDDLEWARE 
  *************************************************************/
-
-
 app.use(express.static(path.resolve(__dirname, 'client')));
 
 /* Use Cookie Parser */
@@ -343,6 +351,9 @@ schema_update.updateUser();
 require('./server/routes.js')(
     app,
     path,
+    io,
+    fs,
+    jf,
     User
 );
 
@@ -370,8 +381,12 @@ app.all('/*', (req, res) => {
 // For Local Server Creation
 if (ENV == 'local') {
 
-    http.createServer(app).listen(port, function () {
-        console.log('\nSERVER RUNNING.... http://' + server_IP + ':' + port);
+    // http.createServer(app).listen(port, function () {
+    //     console.log('\nSERVER RUNNING.... http://' + server_IP + ':' + port);
+    // });
+
+    server.listen(port, function () {
+        console.log("Chat server listening at", server_IP + ":" + port);
     });
 }
 // END - server.js

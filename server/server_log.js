@@ -186,7 +186,7 @@ function log(req, other, callback) {
 
     var logFile = logs_path + logFileName;
 
-    fs.appendFileSync(logFile, CSV);
+    // fs.appendFileSync(logFile, CSV);
 
     // Finish
     if (callback && typeof callback == 'function') {
