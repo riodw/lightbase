@@ -5,25 +5,34 @@
                 "first": "Rio",
                 "last": "Weber"
             },
-            "email": "rio@medtricslab.com",
-            "state": "PAaaa"
-        },
-        {
-            "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
-            "name": {
-                "first": "Chris",
-                "last": "Tikodi"
-            },
-            "email": "chris@medtricslab.com",
+            "email": "i@rioweber.com",
             "state": "PA"
         },
         {
             "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
             "name": {
-                "first": "Jon",
+                "first": "Chris",
+                "last": "Sparrow"
+            },
+            "email": "csparrow@rioweber.com",
+            "state": "PA"
+        },
+        {
+            "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
+            "name": {
+                "first": "Marry",
                 "last": "Davis"
             },
-            "email": "jon@medtricslab.com",
+            "email": "mdavis@rioweber.com",
+            "state": "PA"
+        },
+        {
+            "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
+            "name": {
+                "first": "Tom",
+                "last": "Parker"
+            },
+            "email": "tparker@rioweber.com",
             "state": "PA"
         }
     ]
