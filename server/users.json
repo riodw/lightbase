@@ -11,29 +11,19 @@
         {
             "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
             "name": {
-                "first": "Tosh",
-                "last": "Cherian"
-            },
-            "email": "santhosh@medtricslab.com",
-            "state": "PA"
-        },
-        {
-            "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
-            "name": {
                 "first": "Chris",
                 "last": "Tikodi"
             },
             "email": "chris@medtricslab.com",
             "state": "PA"
-        }
-        ,
+        },
         {
             "uuid": "2390234890-89sdfg-wsfdf0ed0d-ds9eefds0sf",
             "name": {
-                "first": "David",
-                "last": "Tikodi"
+                "first": "Jon",
+                "last": "Davis"
             },
-            "email": "chris@medtricslab.com",
+            "email": "jon@medtricslab.com",
             "state": "PA"
         }
     ]
